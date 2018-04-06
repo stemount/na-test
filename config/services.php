@@ -35,4 +35,8 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'google' => [
+      'maps_geocoder_key' => env('GOOGLE_GEOCODING_API_KEY'),
+    ],
+
 ];

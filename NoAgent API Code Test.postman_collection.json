@@ -1,0 +1,99 @@
+{
+	"info": {
+		"name": "NoAgent API Code Test",
+		"_postman_id": "c99bd47f-c05a-c877-4483-82c18d692795",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add a property with address lookup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "address_line1",
+							"value": "65 Leonard Street",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "address_line2",
+							"value": "Shoreditch",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "address_city_town",
+							"value": "London",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "address_postcode",
+							"value": "EC2A 4QS",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://noagent-test/properties",
+					"protocol": "http",
+					"host": [
+						"noagent-test"
+					],
+					"path": [
+						"properties"
+					]
+				},
+				"description": "Create a property with address lookup."
+			},
+			"response": []
+		},
+		{
+			"name": "Request specific property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "homestead.test/properties/9ddf5546-ef76-49c4-9245-6500ec5ec903a",
+					"host": [
+						"homestead",
+						"test"
+					],
+					"path": [
+						"properties",
+						"9ddf5546-ef76-49c4-9245-6500ec5ec903a"
+					]
+				},
+				"description": "Request a specific property."
+			},
+			"response": []
+		},
+		{
+			"name": "Get all properties in database",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "homestead.test/properties",
+					"host": [
+						"homestead",
+						"test"
+					],
+					"path": [
+						"properties"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
