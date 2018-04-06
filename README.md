@@ -5,10 +5,9 @@ In this repo you will find my code test application, I wanted to spend some qual
 The brief says to require `Address Line 1, Address Line 2, City, Postcode` however `Address Line 2` is nullable/not required as it is only essential to have the first line address and postcode for the Geocoder.
 
 #### How to set up the project
-- `git clone`
+- `git clone git@github.com:stemount/na-test.git ~/na-test`
 - copy `.env` file into project directory
 - `vagrant up`
-
 
 That is it, it will provision the site it will be available at [http://noagent-test](http://noagent-test).
 
@@ -30,7 +29,7 @@ That is it, it will provision the site it will be available at [http://noagent-t
 | `POST` | `/properties` | Add a property, requiring only the address. |
 | `GET/HEAD` | `/properies/{property}` | Retrieve a specific property. |
 
-There is a file named [NoAgent API Code Test.postman_collection.json](NoAgent API Code Test.postman_collection.json) to import into _Postman_ REST client with the three endpoints.
+There is a file named `NoAgent API Code Test.postman_collection.json` to import into _Postman_ REST client with the three endpoints.
 
 ![Postman endpoint screenshot](misc/postman.png)
 
